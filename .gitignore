@@ -1,0 +1,27 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+
+# Environment
+.env
+application-local.properties
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# H2 database file
+*.mv.db
+*.trace.db
