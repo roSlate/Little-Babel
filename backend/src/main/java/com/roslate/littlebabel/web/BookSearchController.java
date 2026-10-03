@@ -1,7 +1,6 @@
 package com.roslate.littlebabel.web;
 
 import com.roslate.littlebabel.openLibrary.OpenLibraryClient;
-import com.roslate.littlebabel.openLibrary.OpenLibraryDoc;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,14 +20,10 @@ public class BookSearchController {
         this.openLibraryClient = openLibraryClient;
     }
 
-    /**
-     * Searches for books matching a free-text query.
-     *
-     * @param q the search text, e.g. a title or an author's name
-     * @return matching works, most relevant first
-     */
     @GetMapping("/api/books/search")
-    public List<OpenLibraryDoc> search(@RequestParam String q) {
-        return openLibraryClient.search(q);
+    public List<BookSearchResult> search(@RequestParam String q) {
+        return openLibraryClient.search(q).stream()
+                .map(BookSearchResult::from)
+                .toList();
     }
 }

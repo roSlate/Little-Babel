@@ -38,8 +38,13 @@ class BookSearchControllerTest {
         mockMvc.perform(get("/api/books/search").param("q", "dune"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.length()").value(1))
-                .andExpect(jsonPath("$[0].key").value("/works/OL893415W"))
-                .andExpect(jsonPath("$[0].title").value("Dune"));
+                .andExpect(jsonPath("$[0].externalKey").value("/works/OL893415W"))
+                .andExpect(jsonPath("$[0].title").value("Dune"))
+                .andExpect(jsonPath("$[0].authors[0]").value("Frank Herbert"))
+                .andExpect(jsonPath("$[0].publishedYear").value(1965))
+                .andExpect(jsonPath("$[0].coverId").value(123))
+                .andExpect(jsonPath("$[0].pageCount").value(412))
+                .andExpect(jsonPath("$[0].author_name").doesNotExist());
     }
 
     @Test
