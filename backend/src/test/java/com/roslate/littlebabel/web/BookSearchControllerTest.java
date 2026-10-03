@@ -1,7 +1,7 @@
 package com.roslate.littlebabel.web;
 
-import com.roslate.littlebabel.openLibrary.OpenLibraryClient;
-import com.roslate.littlebabel.openLibrary.OpenLibraryDoc;
+import com.roslate.littlebabel.openlibrary.OpenLibraryClient;
+import com.roslate.littlebabel.openlibrary.OpenLibraryDoc;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;

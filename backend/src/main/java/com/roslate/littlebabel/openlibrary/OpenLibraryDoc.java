@@ -1,4 +1,4 @@
-package com.roslate.littlebabel.openLibrary;
+package com.roslate.littlebabel.openlibrary;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

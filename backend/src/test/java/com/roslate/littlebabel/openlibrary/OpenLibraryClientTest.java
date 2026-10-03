@@ -1,4 +1,4 @@
-package com.roslate.littlebabel.openLibrary;
+package com.roslate.littlebabel.openlibrary;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

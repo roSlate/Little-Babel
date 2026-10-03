@@ -1,4 +1,4 @@
-package com.roslate.littlebabel.openLibrary;
+package com.roslate.littlebabel.openlibrary;
 
 import org.junit.jupiter.api.Test;
 import tools.jackson.databind.json.JsonMapper;

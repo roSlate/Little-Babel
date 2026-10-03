@@ -1,4 +1,4 @@
-package com.roslate.littlebabel.openLibrary;
+package com.roslate.littlebabel.openlibrary;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.roslate.littlebabel.web;
 
-import com.roslate.littlebabel.openLibrary.OpenLibraryDoc;
+import com.roslate.littlebabel.openlibrary.OpenLibraryDoc;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

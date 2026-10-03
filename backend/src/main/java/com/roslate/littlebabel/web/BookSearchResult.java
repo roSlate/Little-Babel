@@ -1,6 +1,6 @@
 package com.roslate.littlebabel.web;
 
-import com.roslate.littlebabel.openLibrary.OpenLibraryDoc;
+import com.roslate.littlebabel.openlibrary.OpenLibraryDoc;
 
 import java.util.List;
 
