@@ -44,7 +44,11 @@ public class Book {
      * Open Library work key (e.g. {@code "/works/OL59863W"}). The reconnect
      * point for re-fetching anything not cached on this entity — description,
      * subjects, ISBNs, etc.
+     * <p>
+     * Unique, so the same work can't be on the shelf twice. Books added by hand,
+     * without a key, are allowed; several of them can have no key at all.
      */
+    @Column(unique = true)
     private String externalKey;
 
     /**
